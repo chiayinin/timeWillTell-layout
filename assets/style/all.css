@@ -11569,4 +11569,8 @@ fieldset:disabled .btn {
   font-weight: 400;
 }
 
+h1, .h1 {
+  background-image: url(/dist/assets/images/pierre-chatel-innocenti-1667193-unsplash.jpg);
+}
+
 /*# sourceMappingURL=all.css.map */
