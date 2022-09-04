@@ -14,9 +14,10 @@
   text-align: center;
 }
 
-.introduce img {
-  width: 400px;
-  height: 400px;
+.introduce .material-symbols-outlined {
+  margin-right: 4px;
+  vertical-align: middle;
+  font-variation-settings: "FILL" 1;
 }
 
 /*# sourceMappingURL=index.css.map */
