@@ -14782,12 +14782,6 @@ header {
   text-align: center;
 }
 
-@media screen and (min-width: 992px) {
-  .banner .banner-content {
-    text-align: start;
-  }
-}
-
 .introduce img {
   width: 400px;
   height: 400px;
