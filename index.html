@@ -8,7 +8,9 @@
     <title>TimeWillTell-時間管理工具</title>
     <link href="./assets/images/logo.ico" rel="icon" type="image/x-ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./assets/style/all.css">
+
   </head>
 
   <body>
@@ -76,18 +78,19 @@
   </div>
 </div>
 <!-- 介紹 -->
-<section class="introduce mt-14" >
+<section class="introduce mt-10">
   <div class="container">
     <div class="row">
+      <!-- one -->
       <section class="col-12 mb-13 ">
         <div class="d-flex align-items-center flex-lg-row flex-column">
-          <div class="flex-lg-shrink-0">
+          <div class="flex-lg-shrink-0 mb-5">
             <figure class="figure-img rounded border border-standard border-2">
-              <img src="../../assets/images/photo02.jpg" alt="photo02" class="img-fluid" width="400" height="400">
+              <img src="./../assets/images/photo02.jpg" alt="photo02" class="img-fluid" width="400" height="400">
             </figure>
           </div>
           <div class="flex-lg-grow-1 ms-lg-6 ms-0 w-100">
-            <h2 class="fw-bold mb-7">結合「子彈筆記」和「原子時間」的概念，<br/>找回屬於你的黃金時間。</h2>
+            <h2 class="fw-bold mb-7">結合「子彈筆記」和「原子時間」的概念，<br class="d-none d-lg-inline"/>找回屬於你的黃金時間。</h2>
             <div class="d-flex mb-7 justify-content-lg-between align-items-start lh-lg flex-lg-row flex-column">
               <div class="align-self-center align-self-lg-start">
                 <h5 class="fz-4 fw-bold mb-2">子彈筆記精隨</h5>
@@ -115,28 +118,200 @@
           </div>
         </div>
       </section>
-      <section></section>
+      <!-- two -->
+      <section class="col-12 mb-13">
+        <div class="d-flex align-items-center flex-lg-row-reverse flex-column">
+          <div class="flex-lg-shrink-0 mb-5">
+            <figure class="figure-img rounded border border-standard border-2">
+              <img src="./../assets/images/photo01.jpg" alt="photo02" class="img-fluid" width="400" height="400">
+            </figure>
+          </div>
+          <div class="flex-lg-grow-1 me-lg-6 me-0 w-100">
+            <h2 class="fw-bold mb-7">圓餅圖、數據總覽，<br class="d-none d-lg-inline"/>學習時間調配，讓你成為「自律達人」！</h2>
+            <p class="mb-7">有如理財工具告訴你錢都花在哪裡？讓TimeWillTell幫助你檢視自己的時間分配，學習調整生活重要事項的優先順序，藉由精準的時間管理，讓你不再拿「太忙了」找藉口，成為生活中的「自律達人」！</p>
+            <div class="d-flex justify-content-center justify-content-lg-start">
+              <a class="btn-default-lg" href="#">探索更多<span class="d-inline-block ps-3">→</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </div>
 </section>
 
-<!-- 推薦 -->
-<section></section>
+<!-- 推薦 recommend -->
+<section class="recommend shade-img">
+  <div class="">
+  <div class="container shade-tertiary">
+    <div class="row">
+      <div class="col-12">
+        <div class="fw-bold text-center mb-11">
+          <h2 class="fs-7 mb-1">網友推薦</h2>
+          <p class="fs-5">這些人都透過 TimeWillTell 改變日常，翻轉生活！</p>
+        </div>
+        <!-- swiper start -->
+        <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 g-4 swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- card -->
+            <div class="col swiper-slide">
+              <div class="h-100">
+                <div class="card-body">
+                  <!-- card header -->
+                  <div class="d-flex">
+                    <figure class="flex-shrink-0">
+                      <img src="./../assets/images/person03.jpg" class="card-img-top rounded-circle" alt="...">
+                    </figure>
+                    <div class="card-body flex-frow-1 ms-3 text-end p-0">
+                      <h4 class="card-title">陳小姐</h4>
+                      <small class="text-muted d-block mb-2">服務業</small>
+                      <div class="text-secondary">
+                        <span class="material-symbols-outlined icon-fill">star</span>
+                        <span class="material-symbols-outlined icon-fill">star</span>
+                        <span class="material-symbols-outlined icon-fill">star</span>
+                        <span class="material-symbols-outlined icon-fill">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- card-content -->
+                  <div class="p-5 bg-white rounded-3 triangle-top">
+                    <p class="card-text mb-5">
+                      真的真很喜歡這個時間管理工具！能讓自己知道每天要做些什麼，每日待辦清單的概念改成結果清單的概念很棒，完成後也會很興奮地劃掉。現在也終於可以準時下班了，身體也逐漸變健康了，真的很感謝！
+                    </p>
+                    <a class="btn-default-lg" href="#">探索更多<span class="d-inline-block ps-3">→</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card -->
+            <div class="col swiper-slide">
+              <div class="h-100">
+                <div class="card-body">
+                  <!-- card header -->
+                  <div class="d-flex">
+                    <figure class="flex-shrink-0">
+                      <img src="./../assets/images/person01.jpg" class="card-img-top rounded-circle" alt="...">
+                    </figure>
+                    <div class="card-body flex-frow-1 ms-3 text-end p-0">
+                      <h4 class="card-title">扛壩子</h4>
+                      <small class="text-muted d-block mb-2">創業青年</small>
+                      <div class="text-secondary">
+                        <span class="material-symbols-outlined icon-fill">star</span>
+                        <span class="material-symbols-outlined icon-fill">star</span>
+                        <span class="material-symbols-outlined icon-fill">star</span>
+                        <span class="material-symbols-outlined icon-fill">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- card-content -->
+                  <div class="p-5 bg-white rounded-3 triangle-top">
+                    <p class="card-text mb-5">
+                      創業的路是艱辛的，算每天日夜顛倒，時間仍然不夠用。幸好開始用 TimeWillTell 後，能掌握自己的時間，才發現浪費許多在零碎的小事上，重新調整後生活也正常了，也久違跟父母吃頓飯，生活逐漸變好，太棒了！
+                    </p>
+                    <a class="btn-default-lg" href="#">探索更多<span class="d-inline-block ps-3">→</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card -->
+            <div class="col swiper-slide">
+              <div class="h-100">
+                <div class="card-body">
+                  <!-- card header -->
+                  <div class="d-flex">
+                    <figure class="flex-shrink-0">
+                      <img src="./../assets/images/person04.jpg" class="card-img-top rounded-circle" alt="...">
+                    </figure>
+                    <div class="card-body flex-frow-1 ms-3 text-end p-0">
+                      <h4 class="card-title">林同學</h4>
+                      <small class="text-muted d-block mb-2">國三生</small>
+                      <div class="text-secondary">
+                        <span class="material-symbols-outlined icon-fill">star</span>
+                        <span class="material-symbols-outlined icon-fill">star</span>
+                        <span class="material-symbols-outlined icon-fill">star</span>
+                        <span class="material-symbols-outlined icon-fill">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- card-content -->
+                  <div class="p-5 bg-white rounded-3 triangle-top">
+                    <p class="card-text mb-5">
+                      使用體驗很好，放學後學家，吃完晚餐的時間不像在學校那麼自律，一直沒辦法做很好的讀書計劃。使用時間管理工具後，就好像把時間「撿起來用」，安排要複習的科目非常容易，介面也簡單好用。大推薦！
+                    </p>
+                    <a class="btn-default-lg" href="#">探索更多<span class="d-inline-block ps-3">→</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card -->
+            <div class="col swiper-slide">
+              <div class="h-100">
+                <div class="card-body">
+                  <!-- card header -->
+                  <div class="d-flex">
+                    <figure class="flex-shrink-0">
+                      <img src="./../assets/images/person02.jpg" class="card-img-top rounded-circle" alt="...">
+                    </figure>
+                    <div class="card-body flex-frow-1 ms-3 text-end p-0">
+                      <h4 class="card-title">林同學</h4>
+                      <small class="text-muted d-block mb-2">國三生</small>
+                      <div class="text-secondary">
+                        <span class="material-symbols-outlined icon-fill">star</span>
+                        <span class="material-symbols-outlined icon-fill">star</span>
+                        <span class="material-symbols-outlined icon-fill">star</span>
+                        <span class="material-symbols-outlined icon-fill">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- card-content -->
+                  <div class="p-5 bg-white rounded-3 triangle-top">
+                    <p class="card-text mb-5">
+                      使用體驗很好，放學後學家，吃完晚餐的時間不像在學校那麼自律，一直沒辦法做很好的讀書計劃。使用時間管理工具後，就好像把時間「撿起來用」，安排要複習的科目非常容易，介面也簡單好用。大推薦！
+                    </p>
+                    <a class="btn-default-lg" href="#">探索更多<span class="d-inline-block ps-3">→</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- swiper 分頁點點 -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- seiper test -->
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
 
 <!-- 價格 -->
-<section></section>
+<section class="price">
+price
+</section>
 
 <!-- 訂閱 -->
 <section class="subscribe p-2">
   <div class="container h-100 position-relative">
-    <div class="row">
-      <div class="col-12 subscribe-content position-absolute p-4 lh-lg rounded-3 shadow">
-        <h1 class="text-pacifico pb-4">TimeWillTell</h1>
-        <h2 class="h1 fw-bold pb-4">Try Now !</h2>
-        <p class="pb-4">立即註冊和開始使用 TimeWillTell</p>
-        <p>個最符合您需求的時間管理工具！</p>
+    <div class="row d-flex justify-content-center align-items-center">
+      <div class="col-12 subscribe-content position-absolute p-4 rounded-3 fw-bold fz-5">
+        <h1 class="text-pacifico fz-8 pb-7">TimeWillTell</h1>
+        <h2 class="h2 fw-bold lh-lg">Try Now !</h2>
+        <p>立即註冊和開始使用 TimeWillTell</p>
+        <p class="pb-8">最符合您需求的時間管理工具！</p>
         <div class="col-12 col-lg-auto">
-          <button type="submit" class="btn-sub w-100">Try <span class="text-pacifico">TimeWillTell</span> Free</button>
+          <button type="submit" class="btn-sub w-auto m-auto">Try <span class="text-pacifico">TimeWillTell</span> Free</button>
         </div>
       </div>
     </div>
@@ -165,6 +340,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
