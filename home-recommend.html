@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TimeWillTell-時間管理工具</title>
+    <!-- title icon -->
+    <link href="./assets/images/logo_40px.ico" rel="icon" type="image/x-ico">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <!-- style -->
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <header class="bg-primary position-fixed w-100">
+      <div class="container">
+        <div class="row">
+          <nav class="navbar navbar-expand-lg navbar-light border-bottom">
+            <div class="container-fluid p-0">
+              <a class="navbar-brand text-pacifico fz-5" href="index.html"><img src="./assets/images/logo_40px.png" alt="logo"   width="40" height="40"class="d-inline-block align-text-top me-3">TimeWillTell</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mt-2 mt-lg-0 fw-500 text-center gap-3 border-top-lg-0">
+                  <li class="nav-item ">
+                    <a class="btn-nav active" aria-current="page" href="index.html#introduce">關於TimeWillTell</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="btn-nav" href="home-recommend.html">網友推薦</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="btn-nav" href="home-price.html">訂閱方案</a>
+                  </li>
+                  <li class="nav-item">
+                    <div class="divline"></div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="btn-nav" href="home-login.html">登入</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="btn-sub" href="#">Try TimeWillTell Free</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- 主色背景 -->
+<main class="bg-primary">
+<!-- banner -->
+<div class="banner-secondary">
+  <div class="container h-100 position-relative p-3">
+    <div class="row">
+        <div class="banner-secondary-content position-absolute top-50 start-50 translate-middle lh-lg rounded-3 shadow border border-3 border-secondary d-flex justify-content-around align-items-center">
+          <h2 class="fw-bold text-secondary">網友推薦</h2>
+          <h1 class="text-pacifico">TimeWillTell</h1>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- recommend -->
+<section class="recommend">
+<div class="container">
+  <!-- recommend title -->
+  <div class="fw-bold text-center mt-11 mb-14">
+    <h2 class="fw-bold mb-1">網友推薦</h2>
+    <p class="fs-5">這些人都透過 TimeWillTell 改變日常，翻轉生活！</p>
+  </div>
+  <!-- 瀑布流 -->
+  <ul class="row list-unstyled mb-0" data-masonry='{"percentPosition": true }'>
+    <!-- 1-4 -->
+    <li class="col-12 col-md-6 col-lg-4 mb-4 px-4">
+      <div class="border-dashed">
+        <!-- card header -->
+        <div class="d-flex">
+          <figure class="flex-shrink-0">
+            <img src="./assets/images/person03.jpg" class="card-img-top rounded-circle" alt="...">
+          </figure>
+          <div class="card-body flex-frow-1 text-end p-0">
+            <h4 class="card-title">陳小姐</h4>
+            <small class="text-muted d-block mb-2">服務業</small>
+            <div class="text-secondary">
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined">star</span>
+            </div>
+          </div>
+        </div>
+        <!-- card-content -->
+        <div class="p-5 bg-white rounded-3 triangle-top mb-4">
+          <p class="card-text">
+            真的真很喜歡這個時間管理工具！能讓自己知道每天要做些什麼，每日待辦清單的概念改成結果清單的概念很棒，完成後也會很興奮地劃掉。現在也終於可以準時下班了，身體也逐漸變健康了，真的很感謝這個程式！
+          </p>
+        </div>
+      </div>
+    </li>
+    <li class="col-12 col-md-6 col-lg-4 mb-4 px-4">
+      <div class="border-dashed">
+        <!-- card header -->
+        <div class="d-flex">
+          <figure class="flex-shrink-0">
+            <img src="./assets/images/person05.jpg" class="card-img-top rounded-circle" alt="...">
+          </figure>
+          <div class="card-body flex-frow-1 text-end p-0">
+            <h4 class="card-title">方小姐</h4>
+            <small class="text-muted d-block mb-2">自由業</small>
+            <div class="text-secondary">
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+            </div>
+          </div>
+        </div>
+        <!-- card-content -->
+        <div class="p-5 bg-white rounded-3 triangle-top mb-4">
+          <p class="card-text">
+            在規劃隔天的排程時很方便，統計功能可以一目了然看到自己在哪項事物上花了多少比例的時間。另外敲碗求專業版有跨裝置自動同步！！
+          </p>
+        </div>
+      </div>
+    </li>
+    <li class="col-12 col-md-6 col-lg-4 mb-4 px-4">
+      <div class="border-dashed">
+        <!-- card header -->
+        <div class="d-flex">
+          <figure class="flex-shrink-0">
+            <img src="./assets/images/person01.jpg" class="card-img-top rounded-circle" alt="...">
+          </figure>
+          <div class="card-body flex-frow-1 text-end p-0">
+            <h4 class="card-title">扛壩子</h4>
+            <small class="text-muted d-block mb-2">創業青年</small>
+            <div class="text-secondary">
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined">star</span>
+            </div>
+          </div>
+        </div>
+        <!-- card-content -->
+        <div class="p-5 bg-white rounded-3 triangle-top mb-4">
+          <p class="card-text">
+            創業的路是艱辛的，算每天日夜顛倒，時間仍然不夠用。幸好開始用 TimeWillTell 後，能掌握自己的時間，才發現浪費許多在零碎的小事上，重新調整後生活也正常了，也久違跟父母吃頓飯，生活逐漸變好，太棒了！
+          </p>
+        </div>
+      </div>
+    </li>
+    <li class="col-12 col-md-6 col-lg-4 mb-4 px-4">
+      <div class="border-dashed">
+        <!-- card header -->
+        <div class="d-flex">
+          <figure class="flex-shrink-0">
+            <img src="./assets/images/person02.jpg" class="card-img-top rounded-circle" alt="...">
+          </figure>
+          <div class="card-body flex-frow-1 text-end p-0">
+            <h4 class="card-title">鄧先生</h4>
+            <small class="text-muted d-block mb-2">科技業</small>
+            <div class="text-secondary">
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined">star</span>
+            </div>
+          </div>
+        </div>
+        <!-- card-content -->
+        <div class="p-5 bg-white rounded-3 triangle-top mb-4">
+          <p class="card-text">
+            成功需要由一點一滴重要但不緊急的事項完成，舉凡健身、冥想、單字訓練等等，你當下不做沒差，但是你做了並且持之以恆會有很大的幫助，這個軟體是我建立習慣的瑰寶，視覺化提醒以及打卡制度讓我能輕易提升動力完成這些小習慣。謝謝，目前沒有什麼問題，希望有更多內容文章講習慣對於人們的看法，或是提供一些成功人士的習慣。
+          </p>
+        </div>
+      </div>
+    </li>
+    <!-- 5-8 -->
+    <li class="col-12 col-md-6 col-lg-4 mb-4 px-4">
+      <div class="border-dashed">
+        <!-- card header -->
+        <div class="d-flex">
+          <figure class="flex-shrink-0">
+            <img src="./assets/images/person04.jpg" class="card-img-top rounded-circle" alt="...">
+          </figure>
+          <div class="card-body flex-frow-1 text-end p-0">
+            <h4 class="card-title">林同學</h4>
+            <small class="text-muted d-block mb-2">國三生</small>
+            <div class="text-secondary">
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined">star</span>
+            </div>
+          </div>
+        </div>
+        <!-- card-content -->
+        <div class="p-5 bg-white rounded-3 triangle-top mb-4">
+          <p class="card-text">
+            使用體驗很好，放學後學家，吃完晚餐的時間不像在學校那麼自律，一直沒辦法做很好的讀書計劃。使用時間管理工具後，就好像把時間「撿起來用」，安排要複習的科目非常容易，介面也簡單好用。大推薦！
+          </p>
+        </div>
+      </div>
+    </li>
+    <li class="col-12 col-md-6 col-lg-4 mb-4 px-4">
+      <div class="border-dashed">
+        <!-- card header -->
+        <div class="d-flex">
+          <figure class="flex-shrink-0">
+            <img src="./assets/images/person06.jpg" class="card-img-top rounded-circle" alt="...">
+          </figure>
+          <div class="card-body flex-frow-1 text-end p-0">
+            <h4 class="card-title">李同學</h4>
+            <small class="text-muted d-block mb-2">新店高中</small>
+            <div class="text-secondary">
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined ">star</span>
+              <span class="material-symbols-outlined">star</span>
+            </div>
+          </div>
+        </div>
+        <!-- card-content -->
+        <div class="p-5 bg-white rounded-3 triangle-top mb-4">
+          <p class="card-text">
+            Really easy to use, it helps me track my spending of my time.
+          </p>
+        </div>
+      </div>
+    </li>
+    <li class="col-12 col-md-6 col-lg-4 mb-4 px-4">
+      <div class="border-dashed">
+        <!-- card header -->
+        <div class="d-flex">
+          <figure class="flex-shrink-0">
+            <img src="./assets/images/person07.jpg" class="card-img-top rounded-circle" alt="...">
+          </figure>
+          <div class="card-body flex-frow-1 text-end p-0">
+            <h4 class="card-title">劉同學</h4>
+            <small class="text-muted d-block mb-2">碩士生</small>
+            <div class="text-secondary">
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+            </div>
+          </div>
+        </div>
+        <!-- card-content -->
+        <div class="p-5 bg-white rounded-3 triangle-top mb-4">
+          <p class="card-text">
+            操作簡單好上手,私心希望統計圓餅圖，可以多自訂義勾選，能夠選擇自己想統計的百分比🙏
+          </p>
+        </div>
+      </div>
+    </li>
+    <li class="col-12 col-md-6 col-lg-4 mb-4 px-4">
+      <div class="border-dashed">
+        <!-- card header -->
+        <div class="d-flex">
+          <figure class="flex-shrink-0">
+            <img src="./assets/images/person08.jpg" class="card-img-top rounded-circle" alt="...">
+          </figure>
+          <div class="card-body flex-frow-1 text-end p-0">
+            <h4 class="card-title">吳小姐</h4>
+            <small class="text-muted d-block mb-2">醫療業</small>
+            <div class="text-secondary">
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+            </div>
+          </div>
+        </div>
+        <!-- card-content -->
+        <div class="p-5 bg-white rounded-3 triangle-top mb-4">
+          <p class="card-text">
+            設計很漂亮，介面好懂，調色優美
+          </p>
+        </div>
+      </div>
+    </li>
+    <!-- 9-12 -->
+    <li class="col-12 col-md-6 col-lg-4 mb-4 px-4">
+      <div class="border-dashed">
+        <!-- card header -->
+        <div class="d-flex">
+          <figure class="flex-shrink-0">
+            <img src="./assets/images/person09.jpg" class="card-img-top rounded-circle" alt="...">
+          </figure>
+          <div class="card-body flex-frow-1 text-end p-0">
+            <h4 class="card-title">陳教授</h4>
+            <small class="text-muted d-block mb-2">台北科技大學</small>
+            <div class="text-secondary">
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined ">star</span>
+              <span class="material-symbols-outlined">star</span>
+            </div>
+          </div>
+        </div>
+        <!-- card-content -->
+        <div class="p-5 bg-white rounded-3 triangle-top mb-4">
+          <p class="card-text">
+            方便快速，教學也很簡單，馬上就了解怎麼操作。
+          </p>
+        </div>
+      </div>
+    </li>
+    <li class="col-12 col-md-6 col-lg-4 mb-4 px-4">
+      <div class="border-dashed">
+        <!-- card header -->
+        <div class="d-flex">
+          <figure class="flex-shrink-0">
+            <img src="./assets/images/person10.jpg" class="card-img-top rounded-circle" alt="...">
+          </figure>
+          <div class="card-body flex-frow-1 text-end p-0">
+            <h4 class="card-title">何同學</h4>
+            <small class="text-muted d-block mb-2">板橋高中</small>
+            <div class="text-secondary">
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined">star</span>
+            </div>
+          </div>
+        </div>
+        <!-- card-content -->
+        <div class="p-5 bg-white rounded-3 triangle-top mb-4">
+          <p class="card-text">
+            如果還遲遲無法定下心，可以用這個軟體，控制自己玩樂的時間，然後做事情想到獎勵就會更認真專注，還有報表顯示你的時間安排。
+          </p>
+        </div>
+      </div>
+    </li>
+    <li class="col-12 col-md-6 col-lg-4 mb-4 px-4">
+      <div class="border-dashed">
+        <!-- card header -->
+        <div class="d-flex">
+          <figure class="flex-shrink-0">
+            <img src="./assets/images/person11.jpg" class="card-img-top rounded-circle" alt="...">
+          </figure>
+          <div class="card-body flex-frow-1 text-end p-0">
+            <h4 class="card-title">楊先生</h4>
+            <small class="text-muted d-block mb-2">建築師</small>
+            <div class="text-secondary">
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+            </div>
+          </div>
+        </div>
+        <!-- card-content -->
+        <div class="p-5 bg-white rounded-3 triangle-top mb-4">
+          <p class="card-text">
+            不僅協助專注專案上，管理代辦事項，也可以用來統計每天花多少時間在各類型專案上。
+          </p>
+        </div>
+      </div>
+    </li>
+    <li class="col-12 col-md-6 col-lg-4 mb-4 px-4">
+      <div class="border-dashed">
+        <!-- card header -->
+        <div class="d-flex">
+          <figure class="flex-shrink-0">
+            <img src="./assets/images/person12.jpg" class="card-img-top rounded-circle" alt="...">
+          </figure>
+          <div class="card-body flex-frow-1 text-end p-0">
+            <h4 class="card-title">嚴師父</h4>
+            <small class="text-muted d-block mb-2">三井日本料理</small>
+            <div class="text-secondary">
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+            </div>
+          </div>
+        </div>
+        <!-- card-content -->
+        <div class="p-5 bg-white rounded-3 triangle-top mb-4">
+          <p class="card-text">
+            容易有拖延症的人感覺可以用來幫助自己、督促自己
+          </p>
+        </div>
+      </div>
+    </li>
+    <!-- 13-16 -->
+    <li class="col-12 col-md-6 col-lg-4 mb-4 px-4">
+      <div class="border-dashed">
+        <!-- card header -->
+        <div class="d-flex">
+          <figure class="flex-shrink-0">
+            <img src="./assets/images/person13.jpg" class="card-img-top rounded-circle" alt="...">
+          </figure>
+          <div class="card-body flex-frow-1 text-end p-0">
+            <h4 class="card-title">張小姐</h4>
+            <small class="text-muted d-block mb-2">探
+            險家</small>
+            <div class="text-secondary">
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined ">star</span>
+              <span class="material-symbols-outlined">star</span>
+            </div>
+          </div>
+        </div>
+        <!-- card-content -->
+        <div class="p-5 bg-white rounded-3 triangle-top mb-4">
+          <p class="card-text">
+            很好用！許願，希望可以增加更多桌面小工具， 像是每日任務列表、一鍵開始專注！
+          </p>
+        </div>
+      </div>
+    </li>
+    <li class="col-12 col-md-6 col-lg-4 mb-4 px-4">
+      <div class="border-dashed">
+        <!-- card header -->
+        <div class="d-flex">
+          <figure class="flex-shrink-0">
+            <img src="./assets/images/person14.jpg" class="card-img-top rounded-circle" alt="...">
+          </figure>
+          <div class="card-body flex-frow-1 text-end p-0">
+            <h4 class="card-title">葉先生</h4>
+            <small class="text-muted d-block mb-2">攝影師</small>
+            <div class="text-secondary">
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+            </div>
+          </div>
+        </div>
+        <!-- card-content -->
+        <div class="p-5 bg-white rounded-3 triangle-top mb-4">
+          <p class="card-text">
+            很喜歡，裡面的功能我都很喜歡
+          </p>
+        </div>
+      </div>
+    </li>
+    <li class="col-12 col-md-6 col-lg-4 mb-4 px-4">
+      <div class="border-dashed">
+        <!-- card header -->
+        <div class="d-flex">
+          <figure class="flex-shrink-0">
+            <img src="./assets/images/person15.jpg" class="card-img-top rounded-circle" alt="...">
+          </figure>
+          <div class="card-body flex-frow-1 text-end p-0">
+            <h4 class="card-title">林同學</h4>
+            <small class="text-muted d-block mb-2">師大附中</small>
+            <div class="text-secondary">
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+            </div>
+          </div>
+        </div>
+        <!-- card-content -->
+        <div class="p-5 bg-white rounded-3 triangle-top mb-4">
+          <p class="card-text">
+            很棒！讀書效率變好了，成就感最大的時候是每天統計總專注時數的時候，適合期中期末考前衝刺🌟
+          </p>
+        </div>
+      </div>
+    </li>
+    <li class="col-12 col-md-6 col-lg-4 mb-4 px-4">
+      <div class="border-dashed">
+        <!-- card header -->
+        <div class="d-flex">
+          <figure class="flex-shrink-0">
+            <img src="./assets/images/person16.jpg" class="card-img-top rounded-circle" alt="...">
+          </figure>
+          <div class="card-body flex-frow-1 text-end p-0">
+            <h4 class="card-title">徐先生</h4>
+            <small class="text-muted d-block mb-2">街頭藝人</small>
+            <div class="text-secondary">
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined">star</span>
+            </div>
+          </div>
+        </div>
+        <!-- card-content -->
+        <div class="p-5 bg-white rounded-3 triangle-top mb-4">
+          <p class="card-text">
+            介面好看，使用簡單，感謝開發團隊有持續的優化功能
+          </p>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+</section>
+</main>
+
+
+    <footer class="bg-standard text-white">
+      <div class="container">
+        <div class="row justify-content-between align-items-center py-3 gap-3 gap-lg-0">
+          <div class="col-12 col-lg-4 d-flex align-items-center justify-content-center justify-content-lg-start">
+            <span class="material-symbols-outlined me-2">language</span>
+            <select class="form-select w-50" aria-label="Default select example" name="語言切換">
+              <option value="中文" selected>中文</option>
+              <option value="한국어">한국어</option>
+            </select>
+          </div>
+          <p class="col-12 col-lg-4 fw-500 text-center">Copyright &copy 2022 TimeWillTell - chiayinin</p>
+          <ul class="col-12 col-lg-4 list-unstyled d-flex justify-content-center align-items-center gap-4 mb-0">
+            <li><a href="#"><i class="bi bi-github fs-4"></i></a></li>
+            <li><a href="#"><i class="bi bi-instagram fs-4"></i></a></li>
+            <li><a href="#"><i class="bi bi-facebook fs-4"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Masonry 瀑布流 -->
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+    <!-- JavaScript -->
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+
+
+
+</body>
+
+</html>
+
+  </body>
+
+</html>

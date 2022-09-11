@@ -3,11 +3,10 @@
 // import Swiper JS
 var swiper = new Swiper('.mySwiper', {
   // 參數設定
-  // autoplay: {
-  //     disableOnInteraction: false,
-  //     delay: 0
-  // },
-  // direction: "vertical", // 方向
+  autoplay: {
+    disableOnInteraction: false,
+    delay: 0
+  },
   loop: true,
   // 循環
   watchSlidesProgress: true,
@@ -22,6 +21,9 @@ var swiper = new Swiper('.mySwiper', {
   },
   // RWD
   breakpoints: {
+    380: {
+      slidesPerView: 1
+    },
     480: {
       slidesPerView: 1
     },
@@ -32,5 +34,8 @@ var swiper = new Swiper('.mySwiper', {
       slidesPerView: 4
     }
   }
-});
+}); // 瀑布流 載入圖片後渲染
+// $('.row').imagesLoaded().progress( function() {
+//   $('.row').masonry();
+// });
 //# sourceMappingURL=all.js.map

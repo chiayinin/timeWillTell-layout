@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TimeWillTell-時間管理工具</title>
+    <!-- title icon -->
+    <link href="./assets/images/logo_40px.ico" rel="icon" type="image/x-ico">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <!-- style -->
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <header class="bg-primary position-fixed w-100">
+      <div class="container">
+        <div class="row">
+          <nav class="navbar navbar-expand-lg navbar-light border-bottom">
+            <div class="container-fluid p-0">
+              <a class="navbar-brand text-pacifico fz-5" href="index.html"><img src="./assets/images/logo_40px.png" alt="logo"   width="40" height="40"class="d-inline-block align-text-top me-3">TimeWillTell</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mt-2 mt-lg-0 fw-500 text-center gap-3 border-top-lg-0">
+                  <li class="nav-item ">
+                    <a class="btn-nav active" aria-current="page" href="index.html#introduce">關於TimeWillTell</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="btn-nav" href="home-recommend.html">網友推薦</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="btn-nav" href="home-price.html">訂閱方案</a>
+                  </li>
+                  <li class="nav-item">
+                    <div class="divline"></div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="btn-nav" href="home-login.html">登入</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="btn-sub" href="#">Try TimeWillTell Free</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+  <div class="pb-14"></div>
+    <div class="login text-center mb-14">
+      <div class="container">
+        <div class="row justify-content-center">
+          <h1 class="text-pacifico pb-3 mb-3 form-signin border-dashed"><img src="./assets/images/logo_40px.png" alt="logo" class="img-fluid me-3 align-top" width="48px" height="48px">TimeWillTell</h1>
+          <h2 class="h3 mb-1 font-weight-normal text-center">
+            請先登入
+          </h2>
+          <div class="col-8">
+            <form id="form" class="form-signin">
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="username" placeholder="name@example.com"  required autofocus>
+                <label for="username">Email address</label>
+              </div>
+              <div class="form-floating">
+                <input type="password" class="form-control" id="password" placeholder="Password" required>
+                <label for="password">Password</label>
+              </div>
+              <button class="btn btn-primary btn-lg w-100 mt-3 " type="submit">
+                登入
+              </button>
+            </form>
+            <div class="border border-1 my-3 form-signin p-0"></div>
+            <ul class="list-unstyled form-signin">
+              <li class="mb-3"><a class="btn-default-lg text-center py-2 px-0 w-100" href="#"><i class="bi bi-google me-1"></i>使用 Google 登入</span></a></li>
+              <li><a class="btn-default-lg text-center py-2 px-0 w-100" href="#"><i class="bi bi-facebook me-1"></i>使用 FaceBook 登入</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+    <footer class="bg-standard text-white">
+      <div class="container">
+        <div class="row justify-content-between align-items-center py-3 gap-3 gap-lg-0">
+          <div class="col-12 col-lg-4 d-flex align-items-center justify-content-center justify-content-lg-start">
+            <span class="material-symbols-outlined me-2">language</span>
+            <select class="form-select w-50" aria-label="Default select example" name="語言切換">
+              <option value="中文" selected>中文</option>
+              <option value="한국어">한국어</option>
+            </select>
+          </div>
+          <p class="col-12 col-lg-4 fw-500 text-center">Copyright &copy 2022 TimeWillTell - chiayinin</p>
+          <ul class="col-12 col-lg-4 list-unstyled d-flex justify-content-center align-items-center gap-4 mb-0">
+            <li><a href="#"><i class="bi bi-github fs-4"></i></a></li>
+            <li><a href="#"><i class="bi bi-instagram fs-4"></i></a></li>
+            <li><a href="#"><i class="bi bi-facebook fs-4"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Masonry 瀑布流 -->
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+    <!-- JavaScript -->
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+
+
+
+</body>
+
+</html>
+
+  </body>
+
+</html>
