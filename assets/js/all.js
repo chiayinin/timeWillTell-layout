@@ -16,7 +16,7 @@ var swiper = new Swiper('.mySwiper', {
   centeredSlides: true,
   // 分頁物件
   pagination: {
-    el: ".swiper-slide",
+    el: ".swiper-pagination",
     clickable: true
   },
   // RWD
