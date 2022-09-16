@@ -3454,11 +3454,11 @@ textarea.form-control-lg {
   z-index: 5;
   display: none;
   max-width: 100%;
-  padding: 0.25rem 0.5rem;
+  padding: 0.25rem 0.75rem;
   margin-top: .1rem;
   font-size: 0.875rem;
   color: #fff;
-  background-color: rgba(25, 135, 84, 0.9);
+  background-color: rgba(25, 135, 84, 0.8);
   border-radius: 0.25rem;
 }
 
@@ -3553,11 +3553,11 @@ textarea.form-control-lg {
   z-index: 5;
   display: none;
   max-width: 100%;
-  padding: 0.25rem 0.5rem;
+  padding: 0.25rem 0.75rem;
   margin-top: .1rem;
   font-size: 0.875rem;
   color: #fff;
-  background-color: rgba(220, 53, 69, 0.9);
+  background-color: rgba(220, 53, 69, 0.8);
   border-radius: 0.25rem;
 }
 
@@ -7084,7 +7084,7 @@ fieldset:disabled .btn {
 }
 
 .tooltip.show {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .tooltip .tooltip-arrow {
@@ -7163,7 +7163,7 @@ fieldset:disabled .btn {
 
 .tooltip-inner {
   max-width: 200px;
-  padding: 0.25rem 0.5rem;
+  padding: 0.25rem 0.75rem;
   color: #fff;
   text-align: center;
   background-color: #000;
@@ -15507,6 +15507,36 @@ body {
 
 .banner-secondary-content h1, .banner-secondary-content .h1 {
   font-size: 26px;
+}
+
+.front-nav {
+  min-width: 200px;
+  min-height: 100vh;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.front-nav .dropdown-title {
+  display: block;
+  padding: 8px 16px;
+}
+
+.front-nav .dropdown-title img {
+  width: 32px;
+  height: 32px;
+}
+
+.front-nav .nav-link {
+  color: black;
+  opacity: 0.6;
+  padding: 2px 16px;
+}
+
+.front-nav .nav-link:hover {
+  opacity: 1;
+}
+
+.front-nav .material-symbols-outlined {
+  vertical-align: top;
 }
 
 header {

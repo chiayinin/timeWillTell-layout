@@ -16,7 +16,7 @@ var swiper = new Swiper('.mySwiper', {
   centeredSlides: true,
   // 分頁物件
   pagination: {
-    el: ".swiper-pagination",
+    el: ".swiper-slide",
     clickable: true
   },
   // RWD
@@ -38,4 +38,10 @@ var swiper = new Swiper('.mySwiper', {
 // $('.row').imagesLoaded().progress( function() {
 //   $('.row').masonry();
 // });
+// Tooltips
+
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl);
+}); //
 //# sourceMappingURL=all.js.map
