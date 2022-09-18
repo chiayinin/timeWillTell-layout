@@ -48,13 +48,16 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 var btnSide = document.querySelector('.btn-side');
 var iconOpen = document.querySelector('.icon-open');
 var iconClose = document.querySelector('.icon-close');
+var frontMain = document.querySelector('.front-main');
 btnSide.addEventListener('click', function () {
   if (iconOpen.classList.contains('d-none') == true) {
     iconOpen.classList.remove('d-none');
     iconClose.classList.add('d-none');
+    frontMain.classList.remove('ms-200');
   } else {
     iconOpen.classList.add('d-none');
     iconClose.classList.remove('d-none');
+    frontMain.classList.add('ms-200');
   }
 }); // sweet alert
 
@@ -66,5 +69,11 @@ btnShare.addEventListener('click', function () {
     icon: "success",
     button: "確定"
   });
+}); // vanillajs-datepicker
+
+var elem = document.querySelector('input[name="inputDate"]');
+var datepicker = new Datepicker(elem, {
+  language: 'zh-TW',
+  buttonClass: 'btn'
 });
 //# sourceMappingURL=all.js.map

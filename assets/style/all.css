@@ -15501,6 +15501,10 @@ body {
   border-bottom: 1px dashed black;
 }
 
+.ms-200 {
+  margin-left: 200px;
+}
+
 .banner-primary {
   width: 100%;
   height: 576px;
@@ -15611,23 +15615,23 @@ body {
   color: #FFCA0D;
 }
 
-.form-control {
+.search .form-control {
   border: transparent;
 }
 
-.form-control:focus {
+.search .form-control:focus {
   border: 1px solid transparent;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-.modal-icon {
+.search .modal-icon {
   display: block;
   padding: 6px 12px;
   color: #adb5bd;
 }
 
-.search-content {
+.search .search-content {
   height: 300px;
   padding: 6px 12px 16px;
   display: -webkit-box;
@@ -15641,7 +15645,7 @@ body {
           align-items: center;
 }
 
-.search-content p {
+.search .search-content p {
   color: #6c757d;
 }
 
@@ -15719,6 +15723,102 @@ header {
   max-width: 330px;
   padding: 15px;
   margin: auto;
+}
+
+.front-daily-log .form-control {
+  border: 1px solid black;
+}
+
+.front-daily-log .form-control:focus {
+  border-color: #ffe586;
+  background-color: transparent;
+  color: black;
+}
+
+.front-daily-log .datepicker-cell.focused:not(.selected) {
+  background-color: #FFCA0D;
+}
+
+.front-daily-log .datepicker-cell:not(.disabled):hover {
+  background-color: #FFCA0D;
+}
+
+.front-daily-log .datepicker-cell.selected, .front-daily-log .datepicker-cell.selected:hover {
+  background-color: #FFCA0D;
+  color: #000;
+}
+
+.front-daily-log .sentiment > li:nth-of-type(2):hover {
+  color: blue;
+}
+
+.front-daily-log .sentiment > li:nth-of-type(3) {
+  color: brown;
+}
+
+.front-daily-log .sentiment > li:nth-of-type(3):hover {
+  color: brown;
+}
+
+.front-daily-log .sentiment > li:nth-of-type(4):hover {
+  color: green;
+}
+
+.front-daily-log .date {
+  position: relative;
+}
+
+.front-daily-log .date:after {
+  content: '';
+  position: absolute;
+  width: 44%;
+  border: 1px solid black;
+  top: 50%;
+  left: 0;
+}
+
+.front-daily-log .date:before {
+  content: '';
+  position: absolute;
+  width: 44%;
+  border: 1px solid black;
+  top: 50%;
+  right: 0;
+}
+
+.front-daily-log .time-line ul {
+  max-width: 280px;
+}
+
+.front-daily-log .time-line ul li {
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+}
+
+.front-daily-log .time-line ul .material-symbols-outlined {
+  cursor: pointer;
+}
+
+.front-daily-log .time-line ul .material-symbols-outlined:hover {
+  color: #FFCA0D;
+}
+
+.front-daily-log .table {
+  width: 300px;
+}
+
+.front-daily-log .col-center {
+  position: relative;
+}
+
+.front-daily-log .col-center:after {
+  content: '';
+  position: absolute;
+  background-color: #000;
+  border: 1px solid #000;
+  height: 100%;
+  top: 0;
+  right: 50%;
 }
 
 /*# sourceMappingURL=all.css.map */

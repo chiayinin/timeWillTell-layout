@@ -9,6 +9,8 @@
     <link href="./assets/images/logo_40px.ico" rel="icon" type="image/x-ico">
     <!-- swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <!-- vanillajs-datepicker -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker-bs5.min.css">
     <!-- style -->
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
@@ -31,7 +33,7 @@
           <li><a class="dropdown-item" href="#">GitHub</a></li>
         </ul>
       </div>
-      <nav class="front-nav flex-column bg-primary flex-shrink-0 navbar border-end pt-0 collapse collapse-horizontal show" id="front-sidder">
+      <nav class="position-fixed front-nav flex-column bg-primary flex-shrink-0 navbar border-end pt-0 collapse collapse-horizontal show" id="front-sidder">
         <!-- user plan 下拉選單 -->
         <div class="dropdown w-100 mb-1">
           <a href="#" class="dropdown-title d-flex align-items-center text-standard text-decoration-none" data-bs-toggle="dropdown" aria-expanded="true" id="userPlan">
@@ -148,7 +150,7 @@
       </nav>
     </header>
 
-    <main class="front-main w-100">
+    <main class="front-main w-100 ms-200">
       <!-- nav top -->
       <div class="border-bottom overflow-hidden w-100">
         <div class="d-flex justify-content-between align-items-center px-3">
@@ -161,7 +163,337 @@
           </a>
         </div>
       </div>
-      <h2></h2>
+      <div class="container front-daily-log">
+  <!-- titel -->
+  <div class="row py-3">
+    <div class="col">
+      <h2 class="h3 bg-primary d-inline-block rounded-pill p-2"><span class="h1 lh-1 me-2 material-symbols-outlined align-text-bottom">menu_book</span>日誌(Daily Log)</h2>
+    </div>
+    <div class="col-3">
+      <from class="d-flex p-2">
+        <span class="material-symbols-outlined p-2">
+          calendar_month
+        </span>
+        <input type="text" placeholder="請選擇日期" name="inputDate" class="form-control">
+      </from>
+    </div>
+  </div>
+  <!-- header -->
+  <div class="mb-8">
+    <p class="mb-5">
+      <span class="material-symbols-outlined align-bottom me-2">
+        schedule
+      </span>
+      今天剩下： 06 小時 40 分鐘
+    </p>
+    <ul class="list-unstyled d-flex gap-3 align-items-center sentiment">
+      <li>今天心情如何：</li>
+      <li class="d-flex flex-column align-items-center cursor-pointer">
+        <span class="material-symbols-outlined">
+          sentiment_dissatisfied
+        </span>
+        <span class="d-inline-block">心情不好</span>
+      </li>
+      <li class="d-flex flex-column align-items-center cursor-pointer">
+        <span class="material-symbols-outlined">
+          sentiment_satisfied
+        </span>
+        <span class="d-inline-block">覺得普普</span>
+      </li>
+      <li class="d-flex flex-column align-items-center cursor-pointer">
+        <span class="material-symbols-outlined">
+          sentiment_very_satisfied
+        </span>
+        <span class="d-inline-block">來杯珍奶</span>
+      </li>
+    </ul>
+  </div>
+  <!-- content -->
+  <!-- date -->
+  <p class="h1 date text-center mb-3">9/1</p>
+  <!-- Schedule -->
+  <div class="row Schedule">
+    <!-- left -->
+    <div class="col">
+      <!-- time line -->
+      <div class="w-100 time-line">
+        <h5 class="mb-2">
+          <span class="material-symbols-outlined me-1 material-symbols-outlined align-middle text-secondary">
+            auto_awesome
+          </span>
+          時間軸(Time Line)
+        </h5>
+        <ul class="list-unstyled W-100 ms-7 mb-7">
+          <li class="w-100 border-bottom border-standard d-flex justify-content-between">
+            <p>
+              起床時間：<span class="ms-2 d-inline-block">05:00</span>
+            </p>
+            <span class="material-symbols-outlined">
+              edit
+            </span>
+          </li>
+          <li class="w-100 border-bottom border-standard d-flex justify-content-between">
+            <p>
+              冥　　想：<span class="ms-2 d-inline-block">00小時</span>
+            </p>
+          </li>
+          <li class="w-100 border-bottom border-standard d-flex justify-content-between">
+            <p>
+              自我成長：<span class="ms-2 d-inline-block">03小時</span>
+            </p>
+          </li>
+          <li class="w-100 border-bottom border-standard d-flex justify-content-between">
+            <p>
+              工　　作：<span class="ms-2 d-inline-block">05小時</span>
+            </p>
+          </li>
+          <li class="w-100 border-bottom border-standard d-flex justify-content-between">
+            <p>
+              睡　　覺：<span class="ms-2 d-inline-block">05小時</span>
+            </p>
+          </li>
+          <li class="w-100 border-bottom border-standard d-flex justify-content-between">
+            <p>
+              其　　他：<span class="ms-2 d-inline-block">03小時</span>
+            </p>
+          </li>
+        </ul>
+        <!-- time line table -->
+        <table class="table table-bordered border-standard ms-7">
+          <thead class="bg-light">
+            <tr>
+              <th scope="col">事前計畫</th>
+              <th scope="col">時間</th>
+              <th scope="col">實際行動</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"><span class="badge bg-dark">睡覺</span></th>
+              <td>00:00</td>
+              <td><span class="badge bg-dark">睡覺</span></td>
+            </tr>
+            <tr>
+              <th scope="row"><span class="badge bg-dark">睡覺</span></th>
+              <td>01:00</td>
+              <td><span class="badge bg-dark">睡覺</span></td>
+            </tr>
+            <tr>
+              <th scope="row"><span class="badge bg-dark">睡覺</span></th>
+              <td>02:00</td>
+              <td><span class="badge bg-dark">睡覺</span></td>
+            </tr>
+            <tr>
+              <th scope="row"><span class="badge bg-dark">睡覺</span></th>
+              <td>03:00</td>
+              <td><span class="badge bg-dark">睡覺</span></td>
+            </tr>
+            <tr>
+              <th scope="row"><span class="badge bg-dark">睡覺</span></th>
+              <td>04:00</td>
+              <td><span class="badge bg-dark">睡覺</span></td>
+            </tr>
+            <tr>
+              <th scope="row"><span class="badge bg-dark">睡覺</span></th>
+              <td>05:00</td>
+              <td><span class="badge bg-success">運動</span></td>
+            </tr>
+            <tr>
+              <th scope="row"><span class="badge bg-success">運動</span></th>
+              <td>06:00</td>
+              <td><span class="badge bg-success">晨光寫作</span></td>
+            </tr>
+            <tr>
+              <th scope="row"><span class="badge bg-success">晨光寫作</span></th>
+              <td>07:00</td>
+              <td><span class="badge bg-success">學外語</span></td>
+            </tr>
+            <tr>
+              <th scope="row"><span class="badge bg-success">學外語</span></th>
+              <td>08:00</td>
+              <td><span class="badge bg-light text-dark">其他</span></td>
+            </tr>
+            <tr>
+              <th scope="row"><span class="badge bg-light text-dark">通勤</span></th>
+              <td>09:00</td>
+              <td><span class="badge bg-light text-dark">通勤</span></td>
+            </tr>
+            <tr>
+              <th scope="row"><span class="badge bg-info text-dark">工作</span></th>
+              <td>10:00</td>
+              <td><span class="badge bg-info text-dark">工作</span></td>
+            </tr>
+            <tr>
+              <th scope="row"><span class="badge bg-info text-dark">工作</span></th>
+              <td>11:00</td>
+              <td><span class="badge bg-info text-dark">工作</span></td>
+            </tr>
+            <tr>
+              <th scope="row"><span class="badge bg-light text-dark">吃飯</span></th>
+              <td>12:00</td>
+              <td><span class="badge bg-light text-dark">吃飯</span></td>
+            </tr>
+            <tr>
+              <th scope="row"><span class="badge bg-info text-dark">工作</span></th>
+              <td>13:00</td>
+              <td><span class="badge bg-info text-dark">工作</span></td>
+            </tr>
+            <tr>
+              <th scope="row"><span class="badge bg-info text-dark">工作</span></th>
+              <td>14:00</td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row"><span class="badge bg-info text-dark">工作</span></th>
+              <td>15:00</td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row"><span class="badge bg-info text-dark">工作</span></th>
+              <td>16:00</td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row"><span class="badge bg-light text-dark">通勤</span></th>
+              <td>17:00</td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row"><span class="badge bg- text-dark">吃飯</span></th>
+              <td>18:00</td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row"><span class="badge bg-primary text-dark">冥想</span></th>
+              <td>19:00</td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row"><span class="badge bg-primary text-dark">冥想</span></th>
+              <td>20:00</td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row"><span class="badge bg-primary text-dark">冥想</span></th>
+              <td>20:00</td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row"><span class="badge bg-success text-dark">學外語</span></th>
+              <td>21:00</td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row"><span class="badge bg-light text-dark">睡覺</span></th>
+              <td>22:00</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- center -->
+    <div class="col-1 col-center"></div>
+    <!-- right -->
+    <div class="col">
+      <!-- 結果清單 -->
+      <div>
+        <h5 class="mb-2">
+          <span class="material-symbols-outlined me-1 material-symbols-outlined align-middle text-secondary">
+            auto_awesome
+          </span>
+          結果清單(Results List)
+        </h5>
+        <ul class="form-check list-unstyled W-100 ms-7 mb-7">
+          <li>
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Finish Meditate 3 hours.
+            </label>
+          </li>
+          <li>
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Finish writing the Program
+            </label>
+          </li>
+          <li>
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault" checked>
+              I think in English 하고 한국어.
+            </label>
+          </li>
+          <li>
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+            <label class="form-check-label" for="flexCheckDefault">
+              I Exercise 60 minutes a day.
+            </label>
+          </li>
+          <li>
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+            <label class="form-check-label" for="flexCheckDefault">
+              Write a "Morning Pages" every moning.
+            </label>
+          </li>
+        </ul>
+      </div>
+      <!-- 其他任務 -->
+      <div>
+        <h5 class="mb-2">
+          <span class="material-symbols-outlined me-1 material-symbols-outlined align-middle text-secondary">
+            auto_awesome
+          </span>
+          其他任務
+        </h5>
+        <ul class="form-check list-unstyled W-100 ms-7 mb-7">
+          <li>
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+            <label class="form-check-label" for="flexCheckDefault">
+              做家事
+            </label>
+          </li>
+          <li>
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              買菜
+            </label>
+          </li>
+        </ul>
+      </div>
+      <!-- 開心與感恩 -->
+      <div>
+        <h5 class="mb-2">
+          <span class="material-symbols-outlined me-1 material-symbols-outlined align-middle text-secondary">
+            auto_awesome
+          </span>
+          今天的開心與感恩
+        </h5>
+        <ol class="form-check W-100 ms-7 mb-7">
+          <li>
+            買了新書《原子時間》。
+          </li>
+          <li>
+            家人的身體都很健康。
+          </li>
+        </ol>
+      </div>
+      <!-- 今日省思 -->
+      <div>
+        <h5 class="mb-2">
+          <span class="material-symbols-outlined me-1 material-symbols-outlined align-middle text-secondary">
+            auto_awesome
+          </span>
+          今日省思
+        </h5>
+        <ol class="form-check W-100 ms-7 mb-7">
+          <li>
+            中午吃太多了！
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
 
     </main>
   </div>
@@ -184,9 +516,9 @@
     </div>
   </div>
 
-
-
-
+  <!-- vanillajs-datepicker -->
+  <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/locales/zh-TW.js"></script>
   <!-- sweet alert -->
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <!-- swiper -->
