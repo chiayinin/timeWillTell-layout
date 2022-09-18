@@ -14,25 +14,60 @@
   </head>
 
   <body>
+  <div class="d-flex">
     <header>
-      <nav class="front-nav flex-column bg-primary flex-shrink-0 navbar position-fixed">
+      <!-- btn-help -->
+      <div class="btn-group dropup btn-help">
+        <a class="text-standard" href="#" role="button" id="btnHelp" data-bs-toggle="dropdown" aria-expanded="false"><span class="material-symbols-outlined">help</span>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="btnHelp">
+          <li><a class="dropdown-item" href="./index.html">首頁</a></li>
+          <li><a class="dropdown-item" href="./home-recommend.html">網友推薦</a></li>
+          <li><a class="dropdown-item" href="./home-price.html">訂閱方案(優質選NTD250/月最划算)</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><small class="dropdown-header">SNS</small></li>
+          <li><a class="dropdown-item" href="#">Instagram</a></li>
+          <li><a class="dropdown-item" href="#">FaceBook</a></li>
+          <li><a class="dropdown-item" href="#">GitHub</a></li>
+        </ul>
+      </div>
+      <nav class="front-nav flex-column bg-primary flex-shrink-0 navbar border-end pt-0 collapse collapse-horizontal show" id="front-sidder">
         <!-- user plan 下拉選單 -->
         <div class="dropdown w-100 mb-1">
           <a href="#" class="dropdown-title d-flex align-items-center text-standard text-decoration-none" data-bs-toggle="dropdown" aria-expanded="true" id="userPlan">
             <img src="./assets/images/person03.jpg" alt="user" class="rounded-circle me-2">
-            <strong>金伊鳶's 2022 計劃</strong>
+            <strong>2022 計劃</strong>
             <span class="material-symbols-outlined">unfold_more</span>
           </a>
-          <ul class="dropdown-menu text-small shadow" data-popper-placement="top-start" aria-labelledby="userPlan">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <ul class="dropdown-menu text-small shadow ms-3" data-popper-placement="top-start" aria-labelledby="userPlan">
+            <li class="dropdown-header">
+              <small>kimee0827@gmail.com</small>
+            </li>
+            <li><a class="dropdown-item d-flex align-items-center text-decoration-none justify-content-between" href="#">
+              <div>
+                <img src="./assets/images/person03.jpg" alt="user" class="rounded-circle me-2">
+                <span>2022 計劃</span>
+              </div>
+              <span class="material-symbols-outlined">
+                done
+              </span>
+            </a></li>
+            <li><a class="dropdown-item d-flex align-items-center text-decoration-none" href="#">
+              <img src="./assets/images/person03.jpg" alt="user" class="rounded-circle me-2">
+              <span>2021 計劃</span>
+            </a></li>
+            <li><a class="dropdown-item d-flex align-items-center text-decoration-none" href="#">
+              <img src="./assets/images/person03.jpg" alt="user" class="rounded-circle me-2">
+              <span>2020 計劃</span>
+            </a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">檢視 會員資料</a></li>
           </ul>
         </div>
         <!-- 搜尋 設定 -->
         <ul class="nav nav-pills flex-column mb-3 w-100">
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a data-bs-toggle="modal" href="#search" role="button" class="nav-link">
               <span class="material-symbols-outlined me-2">search</span>
               計劃表在哪裡？
             </a>
@@ -106,34 +141,61 @@
         </ul>
         <div class="w-100">
           <hr class="dropdown-divider">
-          <a href="#" class="px-3 d-flex align-items-center text-standard text-decoration-none">
-            <strong class="text-pacifico" data-bs-toggle="tooltip" data-bs-placement="right" title="回首頁">TimeWillTell</strong>
+          <a href="./index.html" class="px-3 d-flex align-items-center text-standard text-decoration-none">
+            <strong class="text-pacifico fsp-1" data-bs-toggle="tooltip" data-bs-placement="right" title="回首頁">TimeWillTell</strong>
           </a>
         </div>
       </nav>
     </header>
 
-    front-index
+    <main class="front-main w-100">
+      <!-- nav top -->
+      <div class="border-bottom overflow-hidden w-100">
+        <div class="d-flex justify-content-between align-items-center px-3">
+          <a class="text-standard btn-side hover-bg p-1" data-bs-toggle="collapse" href="#front-sidder" role="button" aria-expanded="false" aria-controls="front-sidder">
+            <span class="material-symbols-outlined align-bottom icon-open d-none">keyboard_double_arrow_right</span><span class="material-symbols-outlined align-bottom icon-close ">keyboard_double_arrow_left</span>
+          </a>
+          <a class="d-flex align-items-center p-1 text-standard text-decoration-none hover-bg btn-share cursor-pointer">
+            <span class="pe-1">分享</span>
+            <span class="material-symbols-outlined">share</span>
+          </a>
+        </div>
+      </div>
+      <h2></h2>
+
+    </main>
+  </div>
+
+  <!-- search model -->
+  <div class="modal fade" id="search" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body p-0">
+          <form class="d-flex w-100">
+            <input class="form-control me-2" type="search" placeholder="搜尋 2022 Plan 內的計劃表......" aria-label="Search">
+            <span class="material-symbols-outlined modal-icon">search</span>
+          </form>
+          <div class="w-100 text-center border-top text-gray-300 search-content">
+            <p>喔喔！搜尋失敗。<br/>請重新輸入關鍵字或新增你的時間計劃表！</p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
-    <footer class="">
-
-    </footer>
-
-    <!-- swiper -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <!-- Masonry 瀑布流 -->
-    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
-    <!-- JavaScript -->
-    <script src="./assets/js/vendors.js"></script>
-    <script src="./assets/js/all.js"></script>
 
 
-
-</body>
-
-</html>
+  <!-- sweet alert -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <!-- swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- Masonry 瀑布流 -->
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+  <!-- JavaScript -->
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
 
   </body>
-
 </html>

@@ -43,5 +43,28 @@ var swiper = new Swiper('.mySwiper', {
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl);
-}); //
+}); // icon toggle
+
+var btnSide = document.querySelector('.btn-side');
+var iconOpen = document.querySelector('.icon-open');
+var iconClose = document.querySelector('.icon-close');
+btnSide.addEventListener('click', function () {
+  if (iconOpen.classList.contains('d-none') == true) {
+    iconOpen.classList.remove('d-none');
+    iconClose.classList.add('d-none');
+  } else {
+    iconOpen.classList.add('d-none');
+    iconClose.classList.remove('d-none');
+  }
+}); // sweet alert
+
+var btnShare = document.querySelector('.btn-share');
+btnShare.addEventListener('click', function () {
+  swal({
+    title: "分享成功！",
+    text: "",
+    icon: "success",
+    button: "確定"
+  });
+});
 //# sourceMappingURL=all.js.map
