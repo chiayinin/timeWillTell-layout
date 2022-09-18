@@ -1,6 +1,10 @@
 "use strict";
 
-// import Swiper JS
+// AOS
+AOS.init({
+  duration: 1500
+}); // import Swiper JS
+
 var swiper = new Swiper('.mySwiper', {
   // 參數設定
   autoplay: {

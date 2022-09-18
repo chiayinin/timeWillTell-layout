@@ -15270,6 +15270,7 @@ fieldset:disabled .btn {
 
 body {
   font-family: 'Noto Sans TC', sans-serif;
+  overflow-x: hidden;
 }
 
 .text-pacifico {
